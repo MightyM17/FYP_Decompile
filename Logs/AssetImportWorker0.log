@@ -1,0 +1,392 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.49f1 (4dae1bb8668d) revision 5090843'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 11930 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.49f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/bavis/Desktop/abc/ExportedProject
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55370
+Successfully changed project path to: C:/Users/bavis/Desktop/abc/ExportedProject
+C:/Users/bavis/Desktop/abc/ExportedProject
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [18224]  Target information:
+
+Player connection [18224]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2198764833 [EditorId] 2198764833 [Version] 1048832 [Id] WindowsEditor(7,mighty) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [18224]  * "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 2198764833 [EditorId] 2198764833 [Version] 1048832 [Id] WindowsEditor(7,mighty) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [18224]  * "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 2198764833 [EditorId] 2198764833 [Version] 1048832 [Id] WindowsEditor(7,mighty) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [18224] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [18224] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 74.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.49f1 (4dae1bb8668d)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/bavis/Desktop/abc/ExportedProject/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
+    Vendor:   Intel
+    VRAM:     5965 MB
+    Driver:   31.0.101.5186
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56984
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.49f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.056247 seconds.
+- Loaded All Assemblies, in  2.118 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 1891 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.353 seconds
+Domain Reload Profiling: 7470ms
+	BeginReloadAssembly (889ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (4ms)
+	RebuildCommonClasses (139ms)
+	RebuildNativeTypeToScriptingClass (78ms)
+	initialDomainReloadingComplete (306ms)
+	LoadAllAssembliesAndSetupDomain (704ms)
+		LoadAssemblies (893ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (682ms)
+			TypeCache.Refresh (666ms)
+				TypeCache.ScanAssembly (584ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (5354ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3888ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2493ms)
+			SetLoadedEditorAssemblies (15ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (1099ms)
+			ProcessInitializeOnLoadMethodAttributes (230ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Unloading broken assembly Assets/Plugins/Unity.Analytics.DataPrivacy.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Assets/Plugins/Unity.TextMeshPro.dll, this assembly can cause crashes in the runtime
+- Loaded All Assemblies, in  3.301 seconds
+Could not load signature of UnityEngine.Networking.NetworkManager:get_connectionConfig due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:get_globalConfig due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:get_channels due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:StartServer due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:StartServer due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:StartServer due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:StartClient due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:StartClient due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:StartClient due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:StartHost due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:StartHost due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:OnMatchCreate due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:OnMatchList due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:OnMatchJoined due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:get_connectionConfig due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:get_globalConfig due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:get_channels due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:StartServer due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:StartServer due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:StartServer due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:StartClient due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:StartClient due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:StartClient due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:StartHost due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:StartHost due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:OnMatchCreate due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:OnMatchList due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkManager:OnMatchJoined due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkMigrationManager:get_matchInfo due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Could not load signature of UnityEngine.Networking.NetworkMigrationManager:Initialize due to: Could not load file or assembly 'UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.590 seconds
+Domain Reload Profiling: 4886ms
+	BeginReloadAssembly (893ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (103ms)
+	RebuildCommonClasses (220ms)
+	RebuildNativeTypeToScriptingClass (44ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (2043ms)
+		LoadAssemblies (2422ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (142ms)
+			TypeCache.Refresh (122ms)
+				TypeCache.ScanAssembly (83ms)
+			ScanForSourceGeneratedMonoScriptInfo (12ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1592ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1062ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (143ms)
+			SetLoadedEditorAssemblies (15ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (200ms)
+			ProcessInitializeOnLoadAttributes (580ms)
+			ProcessInitializeOnLoadMethodAttributes (103ms)
+			AfterProcessingInitializeOnLoad (21ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (23ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.27 seconds
+Refreshing native plugins compatible for Editor in 4.76 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 417 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (23.0 KB). Loaded Objects now: 926.
+Memory consumption went from 59.3 MB to 59.3 MB.
+Total: 3.695500 ms (FindLiveObjects: 0.098200 ms CreateObjectMapping: 0.023800 ms MarkObjects: 3.507600 ms  DeleteObjects: 0.063600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2192.873938 seconds.
+  path: Assets/Texture2D/record.png
+  artifactKey: Guid(8bd629f62e0022149a3246af82cab7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/record.png using Guid(8bd629f62e0022149a3246af82cab7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bf68970ce4b6cfcc098e0438479db1dc') in 0.479504 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Texture2D/cross.png
+  artifactKey: Guid(13968c9645c0bb8499c1353f7025870e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/cross.png using Guid(13968c9645c0bb8499c1353f7025870e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1c2c145e243d464d6775175ab63942ff') in 0.044519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000618 seconds.
+  path: Assets/Texture2D/play.png
+  artifactKey: Guid(573f4312136c5bb43b3bbcc19c38676e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/play.png using Guid(573f4312136c5bb43b3bbcc19c38676e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '606b07aa5c0da06f20fcb8ae0f7cb5ec') in 0.053814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Texture2D/grab.png
+  artifactKey: Guid(ce79738c30f18aa489c5b160ec0a17ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/grab.png using Guid(ce79738c30f18aa489c5b160ec0a17ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '84f7c7ef02e7329bd199c1c5af8a9ed8') in 0.048901 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Texture2D/tick.png
+  artifactKey: Guid(24c9e223c4991fb419a96bd0a340fe3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/tick.png using Guid(24c9e223c4991fb419a96bd0a340fe3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '20897015a4fdddb80836f67fb2e77d10') in 0.077607 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Texture2D/mouth_normal.png
+  artifactKey: Guid(d0a8b8a60f051ec4da503f1d10cc2677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/mouth_normal.png using Guid(d0a8b8a60f051ec4da503f1d10cc2677) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '743c21afbba58f325813c6984d1f93e6') in 0.321051 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Texture2D/en_gb.png
+  artifactKey: Guid(c0b337da9cc421747a752e387a40e0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/en_gb.png using Guid(c0b337da9cc421747a752e387a40e0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1163f036f7ea6fa4be534afa144f19b2') in 0.092557 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000518 seconds.
+  path: Assets/Texture2D/hand.png
+  artifactKey: Guid(03d04bc7179b730438d91cfbd6fa87b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/hand.png using Guid(03d04bc7179b730438d91cfbd6fa87b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '358fbe0c2373f81aa3dfbea5768e0364') in 0.387537 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000536 seconds.
+  path: Assets/Texture2D/background.png
+  artifactKey: Guid(3a29e57a2d07cd142aaf5f5f16237ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/background.png using Guid(3a29e57a2d07cd142aaf5f5f16237ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '364516064316a6faac757e5b09225e67') in 0.100059 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Texture2D/speaker_off.png
+  artifactKey: Guid(f52fab6c79106f94daaca10ad5e7fea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/speaker_off.png using Guid(f52fab6c79106f94daaca10ad5e7fea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '403996728239013d822fc51c03dfe6cf') in 0.302770 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Texture2D/play_pressed.png
+  artifactKey: Guid(280deca0e2246ec46b2ccf7d2c0bfaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/play_pressed.png using Guid(280deca0e2246ec46b2ccf7d2c0bfaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b7c688d39c462b1080b6f21fab57dc12') in 0.092755 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Texture2D/setting_off.png
+  artifactKey: Guid(051d2218e97050f4f9aa54fc3ae92549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/setting_off.png using Guid(051d2218e97050f4f9aa54fc3ae92549) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f0f7362ff2c6395de8df699f194421ae') in 0.042587 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Texture2D/pause.png
+  artifactKey: Guid(2438b08451105764cacfe1152d821747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/pause.png using Guid(2438b08451105764cacfe1152d821747) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4db2523a5b043584d470f44a1959d00e') in 0.048132 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Texture2D/stop.png
+  artifactKey: Guid(24a6af66895a1b84caceec394aa02f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/stop.png using Guid(24a6af66895a1b84caceec394aa02f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b5dd74ab68dd0f6873cfa64f343d845c') in 0.076039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Texture2D/lips_roughness.png
+  artifactKey: Guid(c1746802303fd234bbc6aba28e894e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/lips_roughness.png using Guid(c1746802303fd234bbc6aba28e894e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bd181f2d676b99f52dcb5a4440e1a85a') in 0.082905 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Texture2D/lips_occlusion.png
+  artifactKey: Guid(586f2eea2d315ec45b5a2e37354aa6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/lips_occlusion.png using Guid(586f2eea2d315ec45b5a2e37354aa6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1171e985a5bfa9c8bdbc5313f39357d2') in 0.123941 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Texture2D/lips_texture.png
+  artifactKey: Guid(c7360de33ccd43f4697db3cf64a06073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture2D/lips_texture.png using Guid(c7360de33ccd43f4697db3cf64a06073) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '49267e7536026cde4daabf71d5401530') in 0.101949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
