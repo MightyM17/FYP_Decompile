@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class AirflowControl : MonoBehaviour
 {
-	public Toggle airflowToggle;
+	// public Toggle airflowToggle;
 
 	public ParticleSystem nasalAirflow;
 
@@ -23,7 +23,8 @@ public class AirflowControl : MonoBehaviour
 
 	private void Start()
 	{
-		airflowToggle.isOn = global.showAirflow;
+		// airflowToggle.isOn = global.showAirflow;
+		global.showAirflow = true;
 		nasalAirflowRenderer = nasalAirflow.GetComponent<ParticleSystemRenderer>();
 		oralAirflowRenderer = oralAirflow.GetComponent<ParticleSystemRenderer>();
 		trails = oralAirflow.trails;
@@ -55,6 +56,14 @@ public class AirflowControl : MonoBehaviour
 			SetCollider();
 			phoneme = global.phoneme;
 		}
+	}
+
+	public void TestingFunc() {
+		SetPath();
+			SetTrails();
+			SetShape();
+			SetCollider();
+			phoneme = global.phoneme;
 	}
 
 	private void SetPath()

@@ -36,7 +36,7 @@ public class IntelligibilityMediaControl : MonoBehaviour
 
 	public Slider progressSlider;
 
-	public Slider difficultyLevelSlider;
+	// public Slider difficultyLevelSlider;
 
 	public InputField textCtrl;
 
@@ -44,7 +44,7 @@ public class IntelligibilityMediaControl : MonoBehaviour
 
 	public InputField scoreCtrl;
 
-	public Dropdown languageDropdown;
+	// public Dropdown languageDropdown;
 
 	public RawImage waveform;
 
@@ -151,9 +151,9 @@ public class IntelligibilityMediaControl : MonoBehaviour
 		if (asrInit(Application.dataPath + "/"))
 		{
 			Debug.Log("ASR Init");
-			difficultyLevelSlider.minValue = global.difficultyLevelMin;
-			difficultyLevelSlider.maxValue = global.difficultyLevelMax;
-			difficultyLevelSlider.value = global.difficultyLevel;
+			// difficultyLevelSlider.minValue = global.difficultyLevelMin;
+			// difficultyLevelSlider.maxValue = global.difficultyLevelMax;
+			// difficultyLevelSlider.value = global.difficultyLevel;
 			asrSetDifficulty(global.difficultyLevel);
 			for (int i = 0; i < supportedLanguages.Length / 2; i++)
 			{
@@ -171,8 +171,8 @@ public class IntelligibilityMediaControl : MonoBehaviour
 			sapiErrorDlg.SetActive(value: true);
 		}
 		global.asrLanguage = Mathf.Max(Mathf.Min(global.asrLanguage, installedLanguages.Count - 1), 0);
-		languageDropdown.AddOptions(installedLanguages);
-		languageDropdown.value = global.asrLanguage;
+		// languageDropdown.AddOptions(installedLanguages);
+		// languageDropdown.value = global.asrLanguage;
 		asrSetLanguage(supportedLanguages[global.asrLanguage, 0]);
 	}
 
@@ -300,11 +300,11 @@ public class IntelligibilityMediaControl : MonoBehaviour
 		EventSystem.current.SetSelectedGameObject(null);
 	}
 
-	public void OndifficultyLevelSlider()
-	{
-		global.difficultyLevel = (short)difficultyLevelSlider.value;
-		asrSetDifficulty(global.difficultyLevel);
-	}
+	// public void OndifficultyLevelSlider()
+	// {
+	// 	global.difficultyLevel = (short)difficultyLevelSlider.value;
+	// 	asrSetDifficulty(global.difficultyLevel);
+	// }
 
 	public void OnLanguageSelection(int index)
 	{

@@ -18,7 +18,7 @@ public class LicenseManager : MonoBehaviour
 		if (!_InitLicense())
 		{
 			Debug.Log("License manager returned false");
-			QuitApplication();
+			// QuitApplication();
 		}
 	}
 

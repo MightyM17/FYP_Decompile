@@ -18,5 +18,6 @@ public class Quality : MonoBehaviour
 	{
 		global.qualityLevel = index;
 		QualitySettings.SetQualityLevel(global.qualityLevel);
+		Debug.Log("Quality is " + global.qualityLevel);
 	}
 }

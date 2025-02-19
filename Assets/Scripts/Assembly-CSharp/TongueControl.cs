@@ -3,9 +3,9 @@ using UnityEngine.UI;
 
 public class TongueControl : MonoBehaviour
 {
-	public Toggle tongueToggle;
+	// public Toggle tongueToggle;
 
-	public Slider tongueTransparencySlider;
+	// public Slider tongueTransparencySlider;
 
 	private Material activeMaterial;
 
@@ -15,10 +15,12 @@ public class TongueControl : MonoBehaviour
 
 	private void Start()
 	{
-		tongueToggle.isOn = global.showTongue;
-		tongueTransparencySlider.minValue = global.transparencyMin;
-		tongueTransparencySlider.maxValue = global.transparencyMax;
-		tongueTransparencySlider.value = global.tongueTransparency;
+		// tongueToggle.isOn = global.showTongue;
+		global.showTongue = true;
+		// tongueTransparencySlider.minValue = global.transparencyMin;
+		// tongueTransparencySlider.maxValue = global.transparencyMax;
+		// tongueTransparencySlider.value = global.tongueTransparency;
+		global.tongueTransparency = 1f;
 	}
 
 	private void Update()
@@ -49,7 +51,7 @@ public class TongueControl : MonoBehaviour
 	{
 		global.showTongue = value;
 		base.gameObject.GetComponent<SkinnedMeshRenderer>().enabled = value;
-		tongueTransparencySlider.interactable = value;
+		// tongueTransparencySlider.interactable = value;
 	}
 
 	public void OnTongueTransparencySlider(float value)

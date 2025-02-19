@@ -171,6 +171,15 @@ public class MouthAnimator : MonoBehaviour
 		}
 	}
 
+	public void TestingFunc()
+	{
+		Debug.Log("TestingFunc");
+		prevPhoneme = 0;
+		StartCoroutine(animateMouth());
+	}
+
+	public long testPhoneme, globalDuration;
+
 	private IEnumerator animateMouth()
 	{
 		float startTime = Time.time;
@@ -178,8 +187,14 @@ public class MouthAnimator : MonoBehaviour
 		animating = true;
 		if (continualUpdate || prevPhoneme != global.phoneme)
 		{
-			long phoneme = global.phoneme;
-			float duration = Math.Min(0.5f, (float)global.duration / 1000f);
+			Debug.Log("animateMouth global phoneme" + global.phoneme);
+			// long phoneme = global.phoneme;/
+			global.phoneme = testPhoneme;
+			global.duration = globalDuration;
+			long phoneme = testPhoneme;
+			Debug.Log("animateMouth duration" + global.duration);
+			// float duration = Math.Min(0.5f, (float)global.duration / 1000f);
+			float duration = Math.Min(0.5f, (float)globalDuration / 1000f);
 			while (elapsedTime < duration)
 			{
 				switch (phoneme)

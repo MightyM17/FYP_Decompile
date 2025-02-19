@@ -3,9 +3,9 @@ using UnityEngine.UI;
 
 public class LipControl : MonoBehaviour
 {
-	public Toggle lipsToggle;
+	// public Toggle lipsToggle;
 
-	public Slider lipsTransparencySlider;
+	// public Slider lipsTransparencySlider;
 
 	private Material activeMaterial;
 
@@ -15,10 +15,12 @@ public class LipControl : MonoBehaviour
 
 	private void Start()
 	{
-		lipsToggle.isOn = global.showLips;
-		lipsTransparencySlider.minValue = global.transparencyMin;
-		lipsTransparencySlider.maxValue = global.transparencyMax;
-		lipsTransparencySlider.value = global.lipsTransparency;
+		// lipsToggle.isOn = global.showLips;
+		global.showLips = true;
+		// lipsTransparencySlider.minValue = global.transparencyMin;
+		// lipsTransparencySlider.maxValue = global.transparencyMax;
+		// lipsTransparencySlider.value = global.lipsTransparency;
+		global.lipsTransparency = 1f;
 	}
 
 	private void Update()
@@ -49,7 +51,7 @@ public class LipControl : MonoBehaviour
 	{
 		global.showLips = value;
 		base.gameObject.GetComponent<SkinnedMeshRenderer>().enabled = value;
-		lipsTransparencySlider.interactable = value;
+		// lipsTransparencySlider.interactable = value;
 	}
 
 	public void OnLipsTransparencySlider(float value)

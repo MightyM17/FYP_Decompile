@@ -1,0 +1,17 @@
+﻿<GRAMMAR LANGID="809">
+
+  <DEFINE>    
+    <ID NAME="RID_Dynamic" VAL="1"/>
+    <ID NAME="PID_Dynamic" VAL="2"/>    
+    <ID NAME="RID_Dictation" VAL="5"/>   
+  </DEFINE>   
+  
+  <RULE ID="RID_Dynamic" TOPLEVEL="INACTIVE">    
+    <TEXTBUFFER PROPID="PID_Dynamic"/>   
+  </RULE>  
+
+  <RULE ID="RID_Dictation" TOPLEVEL="INACTIVE">
+    <DICTATION MIN="1" MAX="25"/>   
+  </RULE> 
+ 
+</GRAMMAR>

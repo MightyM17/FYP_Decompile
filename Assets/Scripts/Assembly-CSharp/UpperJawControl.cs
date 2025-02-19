@@ -3,9 +3,9 @@ using UnityEngine.UI;
 
 public class UpperJawControl : MonoBehaviour
 {
-	public Toggle upperJawToggle;
+	// public Toggle upperJawToggle;
 
-	public Slider upperJawTransparencySlider;
+	// public Slider upperJawTransparencySlider;
 
 	private Material activeMaterial;
 
@@ -15,10 +15,12 @@ public class UpperJawControl : MonoBehaviour
 
 	private void Start()
 	{
-		upperJawToggle.isOn = global.showUpperJaw;
-		upperJawTransparencySlider.minValue = global.transparencyMin;
-		upperJawTransparencySlider.maxValue = global.transparencyMax;
-		upperJawTransparencySlider.value = global.upperJawTransparency;
+		// upperJawToggle.isOn = global.showUpperJaw;
+		global.showUpperJaw = true;
+		// upperJawTransparencySlider.minValue = global.transparencyMin;
+		// upperJawTransparencySlider.maxValue = global.transparencyMax;
+		// upperJawTransparencySlider.value = global.upperJawTransparency;
+		global.upperJawTransparency = 1f;
 	}
 
 	private void Update()
@@ -49,7 +51,7 @@ public class UpperJawControl : MonoBehaviour
 	{
 		global.showUpperJaw = value;
 		base.gameObject.GetComponent<SkinnedMeshRenderer>().enabled = value;
-		upperJawTransparencySlider.interactable = value;
+		// upperJawTransparencySlider.interactable = value;
 	}
 
 	public void OnUpperJawTransparencySlider(float value)

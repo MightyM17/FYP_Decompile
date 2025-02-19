@@ -40,15 +40,15 @@ public class ModelMediaControl : MonoBehaviour
 
 	private float startTime;
 
-	public Text counter;
+	// public Text counter;
 
-	public Text prompt;
+	// public Text prompt;
 
-	public Button playButton;
+	// public Button playButton;
 
-	public Button stopButton;
+	// public Button stopButton;
 
-	public Slider progressSlider;
+	// public Slider progressSlider;
 
 	public Slider speechRateSlider;
 
@@ -56,11 +56,11 @@ public class ModelMediaControl : MonoBehaviour
 
 	public Dropdown voiceDropdown;
 
-	public RawImage waveform;
+	// public RawImage waveform;
 
 	public Toggle ipaToggle;
 
-	public Text ipaText;
+	// public Text ipaText;
 
 	public GameObject sapiErrorDlg;
 
@@ -72,7 +72,7 @@ public class ModelMediaControl : MonoBehaviour
 
 	public GameObject model2D;
 
-	public Toggle modeToggle;
+	// public Toggle modeToggle;
 
 	private long mediaDurationMs;
 
@@ -148,31 +148,31 @@ public class ModelMediaControl : MonoBehaviour
 		if (ttsInit(Application.dataPath + "/"))
 		{
 			Debug.Log("TTS Init");
-			speechRateSlider.minValue = global.speechRateMin;
-			speechRateSlider.maxValue = global.speechRateMax;
-			speechRateSlider.value = global.speechRate;
-			ttsSetSpeechRate(global.speechRate);
-			int num = 0;
-			while (ttsGetInstalledVoice(voice, num++))
-			{
-				installedVoices.Add(voice.ToString());
-			}
+			// speechRateSlider.minValue = global.speechRateMin;
+			// speechRateSlider.maxValue = global.speechRateMax;
+			// speechRateSlider.value = global.speechRate;
+			// ttsSetSpeechRate(global.speechRate);
+			// int num = 0;
+			// while (ttsGetInstalledVoice(voice, num++))
+			// {
+			// 	installedVoices.Add(voice.ToString());
+			// }
 		}
-		if (installedVoices.Count == 0)
-		{
-			installedVoices.Add("Not installed");
-			ipaToggle.isOn = true;
-			sapiErrorDlg.SetActive(value: true);
-		}
-		global.ttsVoice = Mathf.Max(Mathf.Min(global.ttsVoice, installedVoices.Count - 1), 0);
-		voiceDropdown.AddOptions(installedVoices);
-		voiceDropdown.value = global.ttsVoice;
-		ttsSetVoice(voiceDropdown.options[global.ttsVoice].text);
-		modeToggle.isOn = global.isMode2D;
-		if (LicenseManager.IsEvaluationLicense())
-		{
-			evaluationWatermark.SetActive(value: true);
-		}
+		// if (installedVoices.Count == 0)
+		// {
+		// 	installedVoices.Add("Not installed");
+		// 	ipaToggle.isOn = true;
+		// 	sapiErrorDlg.SetActive(value: true);
+		// }
+		// global.ttsVoice = Mathf.Max(Mathf.Min(global.ttsVoice, installedVoices.Count - 1), 0);
+		// voiceDropdown.AddOptions(installedVoices);
+		// voiceDropdown.value = global.ttsVoice;
+		// ttsSetVoice(voiceDropdown.options[global.ttsVoice].text);
+		// modeToggle.isOn = global.isMode2D;
+		// if (LicenseManager.IsEvaluationLicense())
+		// {
+		// 	evaluationWatermark.SetActive(value: true);
+		// }
 	}
 
 	private void OnApplicationQuit()
@@ -186,130 +186,145 @@ public class ModelMediaControl : MonoBehaviour
 		if (mediaState != 0)
 		{
 			mediaPositionMs = ttsGetMediaPosition();
+			// Debug.Log("mediaPositionMs " + mediaPositionMs);
 			long num = ttsGetPhonemeFromMediaPosition(mediaPositionMs);
+			// Debug.Log("num " + num);
 			global.phoneme = num & 0xFFFF;
+			// Debug.Log("phoneme " + global.phoneme);
 			global.duration = (num >> 16) & 0xFFFF;
 			TimeSpan timeSpan = TimeSpan.FromMilliseconds(mediaPositionMs);
-			ipaText.text = ipaStrings[(int)global.phoneme];
-			counter.text = $"{timeSpan.Hours:0}:{timeSpan.Minutes:00}:{timeSpan.Seconds:00}:{timeSpan.Milliseconds:000}";
-			if (EventSystem.current.currentSelectedGameObject != progressSlider.gameObject)
-			{
-				progressSlider.value = mediaPositionMs;
-			}
-			if (ttsGetMediaState() == 2)
-			{
-				stopButton.onClick.Invoke();
-			}
+			// ipaText.text = ipaStrings[(int)global.phoneme];
+			// counter.text = $"{timeSpan.Hours:0}:{timeSpan.Minutes:00}:{timeSpan.Seconds:00}:{timeSpan.Milliseconds:000}";
+			// if (EventSystem.current.currentSelectedGameObject != progressSlider.gameObject)
+			// {
+			// 	progressSlider.value = mediaPositionMs;
+			// }
+			// if (ttsGetMediaState() == 2)
+			// {
+				// stopButton.onClick.Invoke();
+			// }
 		}
-	}
-
-	public void OnRecord()
-	{
-		if (textCtrl.text == "")
-		{
-			dataEntryErrorDlg.SetActive(value: true);
-		}
-		else if (ttsRecord(textCtrl.text))
-		{
-			if (ttsGetWaveformImageFileName(waveformImageFileName))
-			{
-				mediaDurationMs = ttsGetMediaDuration();
-				progressSlider.minValue = 0f;
-				progressSlider.maxValue = mediaDurationMs;
-				progressSlider.value = 0f;
-				progressSlider.GetComponentInChildren<Image>().enabled = true;
-				waveform.texture = utils.LoadWaveformImage(waveformImageFileName.ToString());
-			}
-			progressSlider.gameObject.SetActive(value: true);
-			prompt.gameObject.SetActive(value: false);
-			playButton.interactable = true;
-			mediaState = MediaState.initialised;
-		}
-	}
-
-	public void OnPlay()
-	{
-		if (ttsPlay())
-		{
-			mediaState = MediaState.playing;
-		}
-	}
-
-	public void OnPause()
-	{
-		if (ttsPause())
-		{
-			mediaState = MediaState.paused;
-		}
-	}
-
-	public void OnStop()
-	{
-		if (ttsStop())
-		{
-			mediaState = MediaState.stopped;
-		}
-	}
-
-	public void OnPrevious()
-	{
-		ttsPrevious();
-	}
-
-	public void OnNext()
-	{
-		ttsNext();
-	}
-
-	public void OnProgressSlider(float value)
-	{
-		if (EventSystem.current.currentSelectedGameObject == progressSlider.gameObject)
-		{
-			mediaPositionMs = (long)Mathf.Min(value, mediaDurationMs);
-			ttsSetMediaPosition(mediaPositionMs);
-		}
-	}
-
-	public void OnProgressSliderRelease()
-	{
-		EventSystem.current.SetSelectedGameObject(null);
-	}
-
-	public void OnSpeechRateSlider()
-	{
-		global.speechRate = (long)speechRateSlider.value;
-		ttsSetSpeechRate(global.speechRate);
-	}
-
-	public void OnSpeechRateSliderRelease()
-	{
-		if (mediaState != 0)
-		{
-			stopButton.onClick.Invoke();
-			OnRecord();
-		}
-	}
-
-	public void OnVoiceSelection(int index)
-	{
-		global.ttsVoice = index;
-		ttsSetVoice(voiceDropdown.options[index].text);
 	}
 
 	public void OnIPA()
 	{
+		Debug.Log("EventSystem.current.currentSelectedGameObject.name: " + EventSystem.current.currentSelectedGameObject.name);
 		if (int.TryParse(Regex.Match(EventSystem.current.currentSelectedGameObject.name, "\\d+").Value, out var result))
 		{
+			Debug.Log(sapiStrings[result]);
 			textCtrl.text = sapiStrings[result];
-			OnRecord();
-			OnPlay();
+			// OnRecord();
+			ttsRecord(textCtrl.text);
+			ttsGetWaveformImageFileName(waveformImageFileName);
+			mediaDurationMs = ttsGetMediaDuration();
+			mediaState = MediaState.initialised;
+			// OnPlay();
+			ttsPlay();
+			mediaState = MediaState.playing;
 		}
 	}
 
-	public void OnToggle2D(bool activate)
-	{
-		global.isMode2D = activate;
-		model2D.SetActive(activate);
-		model3D.SetActive(!activate);
-	}
+	// public void OnPause()
+	// {
+	// 	if (ttsPause())
+	// 	{
+	// 		mediaState = MediaState.paused;
+	// 	}
+	// }
+
+	// public void OnStop()
+	// {
+	// 	if (ttsStop())
+	// 	{
+	// 		mediaState = MediaState.stopped;
+	// 	}
+	// }
+
+	// public void OnPrevious()
+	// {
+	// 	ttsPrevious();
+	// }
+
+	// public void OnNext()
+	// {
+	// 	ttsNext();
+	// }
+
+	// public void OnProgressSlider(float value)
+	// {
+	// 	if (EventSystem.current.currentSelectedGameObject == progressSlider.gameObject)
+	// 	{
+	// 		mediaPositionMs = (long)Mathf.Min(value, mediaDurationMs);
+	// 		ttsSetMediaPosition(mediaPositionMs);
+	// 	}
+	// }
+
+	// public void OnProgressSliderRelease()
+	// {
+	// 	EventSystem.current.SetSelectedGameObject(null);
+	// }
+
+	// public void OnSpeechRateSlider()
+	// {
+	// 	global.speechRate = (long)speechRateSlider.value;
+	// 	ttsSetSpeechRate(global.speechRate);
+	// }
+
+	// public void OnSpeechRateSliderRelease()
+	// {
+	// 	if (mediaState != 0)
+	// 	{
+	// 		// stopButton.onClick.Invoke();
+	// 		OnRecord();
+	// 	}
+	// }
+
+	// public void OnVoiceSelection(int index)
+	// {
+	// 	global.ttsVoice = index;
+	// 	ttsSetVoice(voiceDropdown.options[index].text);
+	// }
+
+	// public void OnRecord()
+	// {
+	// 	if (textCtrl.text == "")
+	// 	{
+	// 		Debug.Log("No text entered");
+	// 		dataEntryErrorDlg.SetActive(value: true);
+	// 	}
+	// 	else if (ttsRecord(textCtrl.text))
+	// 	{
+	// 		Debug.Log("ttsRecord");
+	// 		if (ttsGetWaveformImageFileName(waveformImageFileName))
+	// 		{
+	// 			Debug.Log("if go brr");
+	// 			mediaDurationMs = ttsGetMediaDuration();
+	// 			// progressSlider.minValue = 0f;
+	// 			// progressSlider.maxValue = mediaDurationMs;
+	// 			// progressSlider.value = 0f;
+	// 			// progressSlider.GetComponentInChildren<Image>().enabled = true;
+	// 			// waveform.texture = utils.LoadWaveformImage(waveformImageFileName.ToString());
+	// 		}
+	// 		// progressSlider.gameObject.SetActive(value: true);
+	// 		// prompt.gameObject.SetActive(value: false);
+	// 		// playButton.interactable = true;
+	// 		mediaState = MediaState.initialised;
+	// 	}
+	// }
+
+	// public void OnPlay()
+	// {
+	// 	if (ttsPlay())
+	// 	{
+	// 		Debug.Log("playing");
+	// 		mediaState = MediaState.playing;
+	// 	}
+	// }
+
+	// public void OnToggle2D(bool activate)
+	// {
+	// 	global.isMode2D = activate;
+	// 	model2D.SetActive(activate);
+	// 	model3D.SetActive(!activate);
+	// }
 }

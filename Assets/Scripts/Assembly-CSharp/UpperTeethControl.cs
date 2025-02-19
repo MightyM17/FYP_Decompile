@@ -3,9 +3,9 @@ using UnityEngine.UI;
 
 public class UpperTeethControl : MonoBehaviour
 {
-	public Toggle UpperTeethToggle;
+	// public Toggle UpperTeethToggle;
 
-	public Slider UpperTeethTransparencySlider;
+	// public Slider UpperTeethTransparencySlider;
 
 	private Material activeMaterial;
 
@@ -15,10 +15,12 @@ public class UpperTeethControl : MonoBehaviour
 
 	private void Start()
 	{
-		UpperTeethToggle.isOn = global.showUpperTeeth;
-		UpperTeethTransparencySlider.minValue = global.transparencyMin;
-		UpperTeethTransparencySlider.maxValue = global.transparencyMax;
-		UpperTeethTransparencySlider.value = global.upperTeethTransparency;
+		// UpperTeethToggle.isOn = global.showUpperTeeth;
+		global.showUpperTeeth = true;
+		// UpperTeethTransparencySlider.minValue = global.transparencyMin;
+		// UpperTeethTransparencySlider.maxValue = global.transparencyMax;
+		// UpperTeethTransparencySlider.value = global.upperTeethTransparency;
+		global.upperTeethTransparency = 1f;
 	}
 
 	private void Update()
@@ -49,7 +51,7 @@ public class UpperTeethControl : MonoBehaviour
 	{
 		global.showUpperTeeth = value;
 		base.gameObject.GetComponent<MeshRenderer>().enabled = value;
-		UpperTeethTransparencySlider.interactable = value;
+		// UpperTeethTransparencySlider.interactable = value;
 	}
 
 	public void OnUpperTeethTransparencySlider(float value)

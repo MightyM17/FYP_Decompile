@@ -23,12 +23,12 @@ public class SetMaterial : MonoBehaviour
 
 	public Material stylisedLips;
 
-	public Toggle appearanceToggle;
+	// public Toggle appearanceToggle;
 
-	private void Start()
-	{
-		appearanceToggle.isOn = global.isRealistic;
-	}
+	// private void Start()
+	// {
+	// 	appearanceToggle.isOn = global.isRealistic;
+	// }
 
 	public void OnRealisticToggle(bool isRealistic)
 	{
